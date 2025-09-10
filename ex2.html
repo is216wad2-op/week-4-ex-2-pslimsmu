@@ -7,6 +7,7 @@
             width: 200px;
             height: 200px;
             background-color: goldenrod;
+            border-radius: 0;
         }
 
         /* add CSS code here */
@@ -26,7 +27,16 @@
     <script>
         
        // add code here
+        function changeShape(){
+            const shape = document.getElementById('div1');
+            const isCircle = shape.style.borderRadius != '0%';
 
+            if(isCircle){
+                shape.style.borderRadius = '0%';
+            } else {
+                shape.style.borderRadius = '50%';
+            }
+        }
     </script>
 
 </body>
